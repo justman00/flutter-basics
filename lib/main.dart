@@ -12,7 +12,9 @@ class App extends StatelessWidget {
           appBar: AppBar(
             title: Text('My App'),
           ),
-          body: ProductManager()),
+          body: ProductManager('Starting state')),
+      theme: ThemeData(
+          primarySwatch: Colors.deepOrange, accentColor: Colors.deepPurple),
     );
   }
 }
