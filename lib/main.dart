@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
+// import 'package:flutter/rendering.dart';
 
-import './product_manager.dart';
+import './pages/home.dart';
 
-void main() => runApp(App());
+void main() {
+  // debugPaintSizeEnabled = true;
+  // debugPaintBaselinesEnabled = true;
+  runApp(App());
+}
 
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-          appBar: AppBar(
-            title: Text('My App'),
-          ),
-          body: ProductManager('Starting state')),
+      home: HomePage(),
       theme: ThemeData(
           primarySwatch: Colors.deepOrange, accentColor: Colors.deepPurple),
     );
